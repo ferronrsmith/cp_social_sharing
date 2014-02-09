@@ -1,10 +1,10 @@
 __author__ = 'ferronhanse'
 
-import os
-import social_sharing
 import unittest
-import tempfile
+
 from bs4 import BeautifulSoup
+
+import social_sharing
 
 
 class SocialSharingTestCase(unittest.TestCase):
@@ -50,6 +50,7 @@ class SocialSharingTestCase(unittest.TestCase):
         assert soup.meta['content'] == title
         assert soup.find_all(attrs={'property': 'og:image'})[0]['content'] == image
         assert soup.find_all(attrs={'property': 'og:description'})[0]['content'] == content
+
 
 if __name__ == '__main__':
     unittest.main()
