@@ -1,0 +1,23 @@
+<html>
+
+	<head>
+		<title></title>
+		<meta property="og:title" content="{{ tags.title }}"/>
+		<meta property="og:image" content="{{ tags.image }}"/>
+		<meta property="og:type" content="product"/>
+		<meta property="og:url" content="{{ request.base_url }}"/>
+		<meta property="og:description" content="{{ tags.content }}"/>
+		<meta name="description" content="{{ tags.content }}"/>
+		<meta name="title" content="{{ tags.title }}" />
+	</head>
+
+	<body>
+	<!-- AddThis Button BEGIN -->
+		<a class="addthis_button_facebook" addthis:url="{{ request.url_root }}"
+			addthis:title="An Example Title" addthis:description="An Example Description">
+		</a>
+
+		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52ebce8a2528741f"></script>
+	<!-- AddThis Button END -->
+	</body>
+</html>
