@@ -17,6 +17,3 @@ def load_meta(content, image=None, title='CarePass'):
         tags['image'] = request.url_root + 'static/carepass-icon.png'
 
     return render_template('social.html', tags=tags, request=request)
-
-if __name__ == '__main__':
-    app.run()
