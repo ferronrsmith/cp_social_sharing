@@ -1,10 +1,10 @@
+import social_sharing
+
 __author__ = 'ferronhanse'
 
 import unittest
 
 from bs4 import BeautifulSoup
-
-import social_sharing
 
 
 class SocialSharingTestCase(unittest.TestCase):
